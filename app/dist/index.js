@@ -8,7 +8,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const routes_1 = __importDefault(require("./routes/routes"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.use(routes_1.default);
 app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);
