@@ -6,7 +6,7 @@ import routes from "./routes/routes";
 dotenv.config();
 
 const app: Express = express();
-const port: string | 3000 = process.env.PORT || 3000;
+const port: string | 8080 = process.env.PORT || 8080;
 
 app.use(routes);
 
